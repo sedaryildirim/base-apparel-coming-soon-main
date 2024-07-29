@@ -1,0 +1,247 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+/* Root */
+:root {
+    /* Colors */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+
+    /* Gradients */
+    --gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+    /* Typography */
+    --font-size: 16px;
+    --font-family: 'Josefin Sans', sans-serif;
+
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: 1.5;
+    background: var(--gradient-1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+.logo {
+    padding: 2rem;
+    max-width: 200px;
+    width: 100%;
+}
+
+
+.preview-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-img {
+    display: block;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.content-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.5rem;
+}
+
+.desktop-logo {
+    display: none;
+}
+
+h1 > span{
+    font-weight: 300 !important;
+    color: var(--desaturated-red);
+}
+
+.content {
+    color: var(--desaturated-red);
+    font-size: 1rem;
+    line-height: 1rem;
+    font-size: 14px;
+}
+
+form {
+    position: relative;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+button {
+    max-width: 80px;
+    max-height: 52.5px;
+}
+
+input {
+    width: 100%;
+    padding: 1rem 6rem 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--desaturated-red);
+    color: var(--dark-grayish-red);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--soft-red);
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 5rem;
+    background: var(--gradient-2);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    opacity: 0.9;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.attribution {
+    margin: 0;
+}
+
+.attribution a {
+    color: var(--soft-red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.attribution a:hover {
+    color: var(--desaturated-red);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row-reverse;
+        align-items: stretch;
+        min-height: 100vh;
+        position: relative; /* Add this */
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: block;
+        position: absolute; /* Add this */
+        top: 4rem; /* Add this */
+        left: 4rem; /* Add this */
+    }
+
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem;
+        max-width: none;
+        padding-top: 8rem; /* Add this to create space for the logo */
+    }
+
+
+    .logo {
+        align-self: flex-start;
+        padding: 4rem 0 2rem;
+    }
+
+    .preview-img {
+        flex: 2;
+        object-fit: cover;
+        max-width: none;
+        width: 50%;
+        height: 100vh;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+    
+    .desktop-img {
+        display: block;
+    }
+
+    form {
+        margin: 2rem 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .mobile-img {
+        display: none;
+    }
+    
+    .desktop-img {
+        display: block;
+    }
+}
