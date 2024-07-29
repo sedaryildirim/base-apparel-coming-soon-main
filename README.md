@@ -16,11 +16,11 @@
 This is a solution to the [Base Apparel Coming Soon Page Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0).
 
   <p align="center">   
-    <a href="https://sedaryildirim.github.io/ping-coming-soon-page-main/">View Site</a>
+    <a href="https://sedaryildirim.github.io/base-apparel-coming-soon-main/">View Site</a>
     ·
-    <a href="https://github.com/sedaryildirim/ping-coming-soon-page-main/issues">Report Bug</a>
+    <a href="https://github.com/sedaryildirim/base-apparel-coming-soon-main/issues">Report Bug</a>
     ·
-    <a href="https://github.com/sedaryildirim/ping-coming-soon-page-main/issues">Request Feature</a>
+    <a href="https://github.com/sedaryildirim/base-apparel-coming-soon-main/issues">Request Feature</a>
   </p>
 </div>
 
@@ -32,12 +32,12 @@ This is a solution to the [Base Apparel Coming Soon Page Challenge on Frontend M
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/sedaryildirim/ping-coming-soon-page-main.svg?style=for-the-badge
-[contributors-url]: https://github.com/sedaryildirim/ping-coming-soon-page-main/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sedaryildirim/ping-coming-soon-page-main.svg?style=for-the-badge
-[forks-url]: https://github.com/sedaryildirim/ping-coming-soon-page-main/network/members
-[stars-shield]: https://img.shields.io/github/stars/sedaryildirim/ping-coming-soon-page-main.svg?style=for-the-badge
-[stars-url]: https://github.com/sedaryildirim/ping-coming-soon-page-main/stargazers
-[license-shield]: https://img.shields.io/github/license/sedaryildirim/ping-coming-soon-page-main.svg?style=for-the-badge
-[license-url]: https://github.com/sedaryildirim/ping-coming-soon-page-main/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/sedaryildirim/base-apparel-coming-soon-main.svg?style=for-the-badge
+[contributors-url]: https://github.com/sedaryildirim/base-apparel-coming-soon-main/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/sedaryildirim/base-apparel-coming-soon-main.svg?style=for-the-badge
+[forks-url]: https://github.com/sedaryildirim/base-apparel-coming-soon-main/network/members
+[stars-shield]: https://img.shields.io/github/stars/sedaryildirim/base-apparel-coming-soon-main.svg?style=for-the-badge
+[stars-url]: https://github.com/sedaryildirim/base-apparel-coming-soon-main/stargazers
+[license-shield]: https://img.shields.io/github/license/sedaryildirim/base-apparel-coming-soon-main.svg?style=for-the-badge
+[license-url]: https://github.com/sedaryildirim/base-apparel-coming-soon-main/blob/main/LICENSE.txt
 [product-screenshot]: imgs/screenshot.png
