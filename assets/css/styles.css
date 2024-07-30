@@ -19,7 +19,10 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: 1.5;
-    background: var(--gradient-1);
+    /* background: var(--gradient-1);   */
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main { display: flex; flex-direction: column; }
