@@ -149,9 +149,10 @@ footer { margin-top: 2rem; text-align: center; }
     }
 
     .content {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: lighter;
         line-height: 1.5rem;
+        text-align: left;
     }
 
     .mobile-logo { display: none; }
@@ -163,23 +164,32 @@ footer { margin-top: 2rem; text-align: center; }
         left: 4rem;
     }
 
+    h1 {
+        max-width: 400px;
+         text-align: left;
+    }
+    .content {
+        max-width: 400px;
+    }
+
     .content-wrapper {
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; 
+        align-items: left; 
         padding: 4rem;
         max-width: none;
         padding-top: 8rem;
-        width: 50%;
+        margin-left: 5rem;
+        width: 40%;
     }
 
     form {
         margin: 2rem 0;
         position: relative;
         width: 100%; 
-        max-width: 400px; 
+        max-width: 500pxx; 
     }
 
     .error-message {
@@ -193,13 +203,13 @@ footer { margin-top: 2rem; text-align: center; }
     
     .desktop-img {
         display: block;
-        width: 50%;
+        width: 40%;
         height: 100vh;
         object-fit: cover;
     }
 
     .preview-img {
-        width: 50%;
+        width: 40%;
         height: 100vh;
     }
 
