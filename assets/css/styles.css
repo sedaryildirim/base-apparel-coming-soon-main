@@ -143,6 +143,14 @@ button {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+button img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    margin-left: 1.5rem;
+  }
+
 button:hover {
     opacity: 0.9;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -224,15 +232,18 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center; /* Center content horizontally */
         padding: 4rem;
         max-width: none;
         padding-top: 8rem;
-        width: 50%; /* Added to make content take up 50% of the width */
+        width: 50%;
     }
 
     form {
         margin: 2rem 0;
         position: relative;
+        width: 100%; /* Make form full width of content wrapper */
+        max-width: 400px; /* Limit maximum width */
     }
 
     .error-message {
@@ -248,13 +259,23 @@ footer {
     
     .desktop-img {
         display: block;
-        width: 50%; /* Make the desktop image take up 50% of the screen width */
-        height: 100vh; /* Make the image full height */
-        object-fit: cover; /* Ensure the image covers the area without distortion */
+        width: 50%;
+        height: 100vh;
+        object-fit: cover;
     }
 
     .preview-img {
-        width: 50%; /* Ensure the container also takes up 50% width */
-        height: 100vh; /* Full height */
+        width: 50%;
+        height: 100vh;
+    }
+
+    /* Center the input field and button */
+    input {
+        width: 100%;
+    }
+
+    button {
+        right: 0;
     }
 }
+
