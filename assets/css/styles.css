@@ -157,6 +157,8 @@ footer { margin-top: 2rem; text-align: center; }
 
 .logo {
     padding-left: 4rem;
+    min-width: 250px;
+    height: auto;
 }
 
     .mobile-logo { display: none; }
