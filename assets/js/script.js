@@ -4,25 +4,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorMessage = document.querySelector('.error-message');
     const errorIcon = document.querySelector('.error-icon');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', handleSubmit);
+    emailInput.addEventListener('input', clearError);
+
+    function handleSubmit(event) {
         event.preventDefault();
         
         if (validateEmail(emailInput.value)) {
             // Email is valid
-            errorMessage.classList.add('hidden');
-            errorIcon.classList.add('hidden');
+            clearError();
             console.log('Form submitted successfully');
             // Here you can add code to submit the form
+            form.reset(); // Clear the form after successful submission
         } else {
             // Email is invalid
-            errorMessage.classList.remove('hidden');
-            errorIcon.classList.remove('hidden');
-            errorMessage.textContent = 'Please provide a valid email';
+            showError('Please provide a valid email');
         }
-    });
+    }
 
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
+        return re.test(email.trim());
+    }
+
+    function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.classList.remove('hidden');
+        errorIcon.classList.remove('hidden');
+        emailInput.setAttribute('aria-invalid', 'true');
+    }
+
+    function clearError() {
+        errorMessage.classList.add('hidden');
+        errorIcon.classList.add('hidden');
+        emailInput.removeAttribute('aria-invalid');
     }
 });
