@@ -155,19 +155,24 @@ footer { margin-top: 2rem; text-align: center; }
         text-align: left;
     }
 
+.logo {
+    padding-left: 4rem;
+}
+
     .mobile-logo { display: none; }
 
     .desktop-logo {
         display: block;
         position: absolute;
         top: 4rem;
-        left: 4rem;
+        left: 10%; /* Adjust this value to align with content wrapper */
     }
 
     h1 {
         max-width: 400px;
-         text-align: left;
+        text-align: left;
     }
+    
     .content {
         max-width: 400px;
     }
@@ -177,14 +182,13 @@ footer { margin-top: 2rem; text-align: center; }
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: left; 
+        align-items: flex-start; /* Changed from 'left' to 'flex-start' */
         padding: 4rem;
         max-width: none;
         padding-top: 8rem;
-        margin-left: 5rem;
+        margin-left: 10%; /* Align with the logo */
         width: 40%;
     }
-
     form {
         margin: 2rem 0;
         position: relative;
