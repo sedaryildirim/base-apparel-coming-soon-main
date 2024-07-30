@@ -1,7 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
-
 /* Root */
 :root {
     /* Colors */
@@ -30,7 +29,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
@@ -44,7 +43,7 @@ main {
     flex-direction: column;
     margin: 0;
     padding: 0;
-  }
+}
 
 .logo {
     padding: 2rem;
@@ -105,16 +104,12 @@ h1 > span{
     line-height: 1rem;
     font-size: 14px;
 }
-
 form {
     position: relative;
     max-width: 400px;
     margin: 2rem auto;
-}
+    display: flex;
 
-button {
-    max-width: 80px;
-    max-height: 52.5px;
 }
 
 input {
@@ -133,10 +128,11 @@ input:focus {
 }
 
 button {
+    max-height: 52.5px;
+    max-width: 80px;
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     height: 100%;
     width: 5rem;
     background: var(--gradient-2);
@@ -152,6 +148,27 @@ button:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
+.error-icon {
+    position: absolute;
+    right: 90px; /* Adjust this value to position the icon to the left of the button */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+.error-message {
+    color: var(--soft-red);
+    text-align: left;
+    position: absolute;
+    left: 1.5rem;
+    top: 100%;
+    margin-top: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
 /* Footer styles */
 footer {
     position: relative;
@@ -177,14 +194,18 @@ footer {
     color: var(--desaturated-red);
 }
 
-/* Media Queries */
-
 @media screen and (min-width: 768px) {
     main {
         flex-direction: row-reverse;
         align-items: stretch;
         min-height: 100vh;
-        position: relative; /* Add this */
+        position: relative;
+    }
+
+    .content {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        line-height: 1.5rem;
     }
 
     .mobile-logo {
@@ -193,9 +214,9 @@ footer {
 
     .desktop-logo {
         display: block;
-        position: absolute; /* Add this */
-        top: 4rem; /* Add this */
-        left: 4rem; /* Add this */
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
     }
 
     .content-wrapper {
@@ -205,43 +226,35 @@ footer {
         justify-content: center;
         padding: 4rem;
         max-width: none;
-        padding-top: 8rem; /* Add this to create space for the logo */
-    }
-
-
-    .logo {
-        align-self: flex-start;
-        padding: 4rem 0 2rem;
-    }
-
-    .preview-img {
-        flex: 2;
-        object-fit: cover;
-        max-width: none;
-        width: 50%;
-        height: 100vh;
-    }
-
-    .mobile-img {
-        display: none;
-    }
-    
-    .desktop-img {
-        display: block;
+        padding-top: 8rem;
+        width: 50%; /* Added to make content take up 50% of the width */
     }
 
     form {
         margin: 2rem 0;
+        position: relative;
     }
-}
 
+    .error-message {
+        position: absolute;
+        left: 1.5rem;
+        top: 100%;
+        margin-top: 0.5rem;
+    }
 
-@media screen and (min-width: 768px) {
     .mobile-img {
         display: none;
     }
     
     .desktop-img {
         display: block;
+        width: 50%; /* Make the desktop image take up 50% of the screen width */
+        height: 100vh; /* Make the image full height */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+    }
+
+    .preview-img {
+        width: 50%; /* Ensure the container also takes up 50% width */
+        height: 100vh; /* Full height */
     }
 }

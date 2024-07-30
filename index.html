@@ -27,12 +27,11 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
       
-      <form action="#" method="post" novalidate>
-        <label for="email" class="visually-hidden"></label>
-        <input type="email" id="email" name="email" placeholder="Email Address" required>
-        <button type="submit" aria-label="Submit">
-          <img src="./assets/images/icon-arrow.svg" alt="">
-        </button>
+      <form novalidate>
+        <input type="email" placeholder="Email Address" required>
+        <img src="assets/images/icon-error.svg" alt="Error" class="error-icon hidden">
+        <button type="submit">Submit</button>
+        <p class="error-message hidden"></p>
       </form>
       <footer>
         <p class="attribution">
